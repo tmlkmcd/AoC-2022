@@ -5,7 +5,7 @@ import os
 import requests
 from datetime import datetime
 
-year = '2018'
+year = '2022'
 date = -1
 
 for arg in sys.argv:
