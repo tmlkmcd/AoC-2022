@@ -15,3 +15,9 @@ Hard-coding ftw. Fumbled a lot on trying to figure out a more dynamic strategy b
 - Estimated completion time: ~15 minutes
 
 Spent a long time fumbling over part 1 because I wasn't sure if I had understood the question correctly (unique duplicates or just all duplicates?) - my solution kept coming up with a number that was way too high then randomly output the right answer without any change on my part that I knew of. Part 2 went down on the first try (about 2 minutes) which is atypical for me.
+
+## Day 4
+
+- Estimated completion time: ~15 minutes
+
+This 5am thing is really biting me. Trying to get the logic right when I can barely think is a bit of a monster...
