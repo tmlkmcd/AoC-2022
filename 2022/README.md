@@ -21,3 +21,9 @@ Spent a long time fumbling over part 1 because I wasn't sure if I had understood
 - Estimated completion time: ~15 minutes
 
 This 5am thing is really biting me. Trying to get the logic right when I can barely think is a bit of a monster...
+
+## Day 5
+
+- Estimated completion time: ~30 minutes
+
+As ever, long time deciding how to parse input in a half-asleep haze. Though each step of the way lots of debugging and figuring out but it did go down smoothly. Getting harder but still fun.
