@@ -15,4 +15,4 @@ for cals in lines_in:
 
 elves.sort(reverse=True)
 print('part 1', elves[0])
-print('part 2', sum(elves[0:3]))
+print('part 2', sum(elves[:3]))

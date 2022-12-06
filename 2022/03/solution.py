@@ -17,7 +17,7 @@ dupes = []
 
 for backpack in lines_in:
     assert(len(backpack) % 2 == 0)
-    half = int(len(backpack) / 2)
+    half = len(backpack) // 2
     for c in backpack[half:]:
         if c in backpack[:half]:
             dupes.append(c)

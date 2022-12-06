@@ -1,8 +1,7 @@
 import sys
 
 lines_in = [line for line in sys.stdin]
-part = 1
-c_pointer = 8
+part, c_pointer = 1, 8
 
 crates = lines_in[:c_pointer]
 instructions = [line.split(' ') for line in lines_in[c_pointer + 2:]]
@@ -13,7 +12,7 @@ for n, l in enumerate(lines_in[c_pointer]):
     if l.strip() == '': continue
 
     stacks.append([])
-    for nn in reversed(range(8)):
+    for nn in reversed(range(c_pointer)):
         c = crates[nn][n]
         if c == ' ': break
         stacks[len(stacks) - 1].append(c)

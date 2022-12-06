@@ -27,3 +27,11 @@ This 5am thing is really biting me. Trying to get the logic right when I can bar
 - Estimated completion time: ~30 minutes
 
 As ever, long time deciding how to parse input in a half-asleep haze. Though each step of the way lots of debugging and figuring out but it did go down smoothly. Getting harder but still fun.
+
+## Day 6
+
+- Estimated completino time: ~15 minutes
+
+Surprisingly easy that we're near a week into the challenge, should have finished a lot faster but got snagged on the looping/deduping logic which I think I'd have done much faster in JavaScript. It being 5am still doesn't help...
+
+Also, didn't know about sets in python / that they were that similar to JS. This is how we learn!!
