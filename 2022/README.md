@@ -30,8 +30,14 @@ As ever, long time deciding how to parse input in a half-asleep haze. Though eac
 
 ## Day 6
 
-- Estimated completino time: ~15 minutes
+- Estimated completion time: ~15 minutes
 
 Surprisingly easy that we're near a week into the challenge, should have finished a lot faster but got snagged on the looping/deduping logic which I think I'd have done much faster in JavaScript. It being 5am still doesn't help...
 
 Also, didn't know about sets in python / that they were that similar to JS. This is how we learn!!
+
+## Day 7
+
+- Estimated completion time: ~35 minutes
+
+First trickier one of the year and great fun. Object-oriented programming ftw. Had a full night's sleep last night - the right choice, I'd never have been able to do this one groggy...
