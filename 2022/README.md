@@ -41,3 +41,9 @@ Also, didn't know about sets in python / that they were that similar to JS. This
 - Estimated completion time: ~35 minutes
 
 First trickier one of the year and great fun. Object-oriented programming ftw. Had a full night's sleep last night - the right choice, I'd never have been able to do this one groggy...
+
+## Day 8
+
+0 Estimated completion time: ~70 minutes
+
+Tough one today. Both parts there was trouble getting the looping logic correct, part 2 I had trouble with because I misread the brief a few times before implementing it correctly.

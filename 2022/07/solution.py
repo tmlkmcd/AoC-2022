@@ -3,9 +3,8 @@ import sys
 lines_in = [line.strip() for line in sys.stdin]
 
 class File:
-    def __init__(self, name, size):
-        self.name = name
-        self.size = size
+    def __init__(self, size):
+        self.size = size  # we don't care about the name in this puzzle
 
 class Dir:
     def __init__(self, name, parent):
@@ -13,69 +12,48 @@ class Dir:
         self.parent = parent
         self.dirs = []
         self.files = []
+        self.size = None
 
-    def register_subdir(self, name):
-        new_dir = Dir(name, self)
-        self.dirs.append(new_dir)
-
-        return new_dir
-
-    def register_file(self, name, size):
-        self.files.append(File(name, size))
+    def register_subdir(self, name): self.dirs.append(Dir(name, self))
+    def register_file(self, size): self.files.append(File(size))
 
     def get_size(self):
-        file_size = sum([file.size for file in self.files])
-        dir_size = sum([directory.get_size() for directory in self.dirs])
-
-        return file_size + dir_size
+        if self.size is not None: return self.size
+        file_size = sum(file.size for file in self.files)
+        dir_size = sum(directory.get_size() for directory in self.dirs)
+        self.size = file_size + dir_size
+        return self.size
 
 dirs = Dir('/', None)
 current_dir = dirs
-pointer = 1
+pointer, limit = 1, len(lines_in)
 
-while pointer < len(lines_in):
-    line = lines_in[pointer]
-
-    if line.startswith('$'):
-        if line.startswith('$ cd'):
-            if line == '$ cd /':
-                current_dir = dirs
-            elif line == '$ cd ..':
-                current_dir = current_dir.parent
+while pointer < limit:
+    line = lines_in[pointer].split(' ')
+    if line[1] == 'cd':
+        if line[2] == '/': current_dir = dirs
+        elif line[2] == '..': current_dir = current_dir.parent
+        else: current_dir = next(d for d in current_dir.dirs if d.name == line[2])
+    if line[1] == 'ls':
+        while not lines_in[pointer + 1].startswith('$'):
+            pointer += 1
+            next_line = lines_in[pointer]
+            if next_line.startswith('dir'):
+                current_dir.register_subdir(next_line.split(' ')[1])
             else:
-                cd_into = line.split(' ')[2]
-                current_dir = next((directory for directory in current_dir.dirs if directory.name == cd_into))
-        if line.startswith('$ ls'):
-            while not lines_in[pointer + 1].startswith('$'):
-                pointer += 1
-                next_line = lines_in[pointer]
-                if next_line.startswith('dir'):
-                    current_dir.register_subdir(next_line.split(' ')[1])
-                else:
-                    f_size, f_name = next_line.split(' ')
-                    current_dir.register_file(f_name, int(f_size))
-
-                if pointer + 1 >= len(lines_in):
-                    break
+                current_dir.register_file(int(next_line.split(' ')[0]))
+            if pointer + 1 >= len(lines_in): break
     pointer += 1
 
-pt1_total = 0
-pt2 = 1e20
+pt1, pt2 = 0, 1e10
+total_size = dirs.get_size()
 
-total = dirs.get_size()
-
-def crawl(dir):
-    global pt1_total
-    global pt2
-    s = dir.get_size()
-    if s <= 100000:
-        pt1_total += dir.get_size()
-
-    if total - (70000000 - 30000000) < s < pt2:
-        pt2 = s
-    for sub_dir in dir.dirs:
-        crawl(sub_dir)
+def crawl(directory):
+    global pt1, pt2
+    s = directory.get_size()
+    if s <= 100000: pt1 += s
+    if total_size - (70000000 - 30000000) < s: pt2 = min(pt2, s)
+    for sub_dir in directory.dirs: crawl(sub_dir)
 
 crawl(dirs)
-print('part 1', pt1_total)
-print('part 2', pt2)
+print(f'part 1: {pt1}; part 2: {pt2}')

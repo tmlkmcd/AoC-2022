@@ -22,5 +22,5 @@ for num, from_pile, to_pile in p_instructions:
     stacks[to_pile] += moving if part == 2 else reversed(moving)
     stacks[from_pile] = stacks[from_pile][:num]
 
-last = [s[len(s) - 1] for s in stacks[1:]]
+last = [s[1] for s in stacks[1:]]
 print(f'part {part}:', ''.join(last))
