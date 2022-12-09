@@ -8,7 +8,7 @@ visible = dict()
 
 
 def scan_edge(from_corner='topleft'):
-    global grid
+    global grid, visible
     for x in range(len(grid)):
         highest = -1
         for y in range(len(grid)) if from_corner == 'topleft' else reversed(range(len(grid))):
@@ -28,13 +28,10 @@ scan_edge()
 scan_edge(from_corner='bottomright')
 print('part 1', len(visible.values()))
 
-pt2 = -1
-
 def scan(coords):
     global grid
     y, x = coords
     x1, x2, y1, y2 = 0, 0, 0, 0
-
     max_height = grid[y][x]
 
     _x = x - 1

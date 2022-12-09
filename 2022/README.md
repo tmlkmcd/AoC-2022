@@ -44,6 +44,12 @@ First trickier one of the year and great fun. Object-oriented programming ftw. H
 
 ## Day 8
 
-0 Estimated completion time: ~70 minutes
+- Estimated completion time: ~70 minutes
 
 Tough one today. Both parts there was trouble getting the looping logic correct, part 2 I had trouble with because I misread the brief a few times before implementing it correctly.
+
+## Day 9
+
+- Estimated completion time: ~90 minutes
+
+Much of the delay was implementing the 'snapping' logic when a 'tail' piece has to move diagonally (and implementing various visualisations before I realised that was what the bug was).
