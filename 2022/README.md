@@ -78,4 +78,11 @@ OOP for the win again. Had a little trouble implementing the 'keep away' logic c
 
 Thankfully learned Dijkstra's as a [solution](https://github.com/tmlkmcd/AoC-2021/blob/master/day15/sol-2.py) to one of [last year's problems](https://adventofcode.com/2021/day/15), got a little stuck implementing it in a way that wasn't causing the 'pointer' to simply run around the map in circles but got there in the end.
 
-Part 2 came quite easily once I figured out it was blowing the recursion limit because not all potential starting points can even reach the end, brute-forcing the solution was a bit of a cheat - I'd prefer to have a method that automagically eliminates unnecessary starting points if another successful path already has shown there to be a closer 'a', but the original pathfinding solution was fast enough that this was actually viable. 
+Part 2 came quite easily once I figured out it was blowing the recursion limit because not all potential starting points can even reach the end, brute-forcing the solution was a bit of a cheat - I'd prefer to have a method that automagically eliminates unnecessary starting points if another successful path already has shown there to be a closer 'a', but the original pathfinding solution was fast enough that this was actually viable.
+
+## Day 13
+
+- Estimated completion time: ~20 minutes
+
+Surprised at how quickly this one went down. Misread the problem at the start so implemented the solution slightly wrong but the correction was easy to make. Part 2 as easy as implementing a sorting function.
+
