@@ -86,3 +86,9 @@ Part 2 came quite easily once I figured out it was blowing the recursion limit b
 
 Surprised at how quickly this one went down. Misread the problem at the start so implemented the solution slightly wrong but the correction was easy to make. Part 2 as easy as implementing a sorting function.
 
+## Day 14
+
+-Estimated completion time: ~35 minutes
+
+Given how much the [similar](https://adventofcode.com/2018/day/17) problem put me off a few years ago (especially considering I was doing that year in GoLang), surprised at how quickly this one went down too. I must be getting better.
+
