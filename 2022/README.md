@@ -88,7 +88,14 @@ Surprised at how quickly this one went down. Misread the problem at the start so
 
 ## Day 14
 
--Estimated completion time: ~35 minutes
+- Estimated completion time: ~35 minutes
 
 Given how much the [similar](https://adventofcode.com/2018/day/17) problem put me off a few years ago (especially considering I was doing that year in GoLang), surprised at how quickly this one went down too. I must be getting better.
 
+## Day 15
+
+- Estimated completion time: ~60 minutes
+
+Got snagged for way too long not realising that my regex was not parsing negative numbers and giving me too low an output for pt 1. Worked pretty quickly once I fixed that.
+
+Part 2 decided to see if a library existed for merging ranges instead of simply doing it manually (low and behold, there was something). Feels a bit cheap to still brute-force my way through all y-coordinates to find the right one but definitely much faster than cycling through every coordinate manually. Takes a long time to run when scanning 4 million by 4 million points but I guess this is perhaps the quickest that could be expected 🤷 I'm not fussed about implementing sub-optimal solutions whilst I'm on holiday...
