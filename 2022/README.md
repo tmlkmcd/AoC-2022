@@ -99,3 +99,11 @@ Given how much the [similar](https://adventofcode.com/2018/day/17) problem put m
 Got snagged for way too long not realising that my regex was not parsing negative numbers and giving me too low an output for pt 1. Worked pretty quickly once I fixed that.
 
 Part 2 decided to see if a library existed for merging ranges instead of simply doing it manually (low and behold, there was something). Feels a bit cheap to still brute-force my way through all y-coordinates to find the right one but definitely much faster than cycling through every coordinate manually. Takes a long time to run when scanning 4 million by 4 million points but I guess this is perhaps the quickest that could be expected 🤷 I'm not fussed about implementing sub-optimal solutions whilst I'm on holiday...
+
+## Day 16
+
+- Estimated completion time: ~150 minutes
+
+By far the hardest exercise for AoC this year (so far...?). Still not even 100% sure that my answer would work for all inputs but it got me the stars so I'm happy, plus I have the extra hours while the gf is napping (still on holiday here)...
+
+Both parts run pretty quickly on the test input but with the puzzle input, part 2 took about 5 minutes to complete.
