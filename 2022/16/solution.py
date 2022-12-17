@@ -3,7 +3,7 @@ import sys
 lines_in = [line.strip() for line in sys.stdin]
 
 valves = dict()
-part = 2
+part = 1
 t_limit = 26 if part == 2 else 30
 
 p_destinations = dict()

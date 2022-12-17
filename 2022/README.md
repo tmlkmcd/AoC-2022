@@ -107,3 +107,9 @@ Part 2 decided to see if a library existed for merging ranges instead of simply 
 By far the hardest exercise for AoC this year (so far...?). Still not even 100% sure that my answer would work for all inputs but it got me the stars so I'm happy, plus I have the extra hours while the gf is napping (still on holiday here)...
 
 Both parts run pretty quickly on the test input but with the puzzle input, part 2 took about 5 minutes to complete.
+
+## Day 17
+
+- Estimated completion time: ~3 hours
+
+Harder than yesterday? Part 1 went down easy - was fun - part 2 I could not figure out where this 'fudge factor' was coming from but it appeared consistently in the results off-setting the remainder for some unknown reason. A lot of time spent figuring out what said fudge-factor was through trial and error. Not a good solution but until I can figure out where the extra amount was coming from 🤷
