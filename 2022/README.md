@@ -113,3 +113,9 @@ Both parts run pretty quickly on the test input but with the puzzle input, part 
 - Estimated completion time: ~3 hours
 
 Harder than yesterday? Part 1 went down easy - was fun - part 2 I could not figure out where this 'fudge factor' was coming from but it appeared consistently in the results off-setting the remainder for some unknown reason. A lot of time spent figuring out what said fudge-factor was through trial and error. Not a good solution but until I can figure out where the extra amount was coming from 🤷
+
+## Day 18
+
+- Estimated completion time: ~1 hour
+
+Nice easy one to round out the weekend, still got snagged on working out how to calculate an 'infinite' area in a reasonable amount of time. Current solution does work but does take a few minutes to run. But we have to check out of the hotel in under an hour so it'll have to do 🤷 
