@@ -118,4 +118,14 @@ Harder than yesterday? Part 1 went down easy - was fun - part 2 I could not figu
 
 - Estimated completion time: ~1 hour
 
-Nice easy one to round out the weekend, still got snagged on working out how to calculate an 'infinite' area in a reasonable amount of time. Current solution does work but does take a few minutes to run. But we have to check out of the hotel in under an hour so it'll have to do 🤷 
+Nice easy one to round out the weekend, still got snagged on working out how to calculate an 'infinite' area in a reasonable amount of time. Current solution does work but does take a few minutes to run. But we have to check out of the hotel in under an hour so it'll have to do 🤷
+
+## Day 19
+
+- Estimated completion time: ~6 hours, on-and-off
+
+Most of this time spent waiting for a solution to run. Initially calculated absolutely every step possible per minute which caused the program to peak at about 45Gb mem usage for part 1, decided that waiting for the program to scan a list of 150 million items when much of it is held in swap space was impractical.
+
+Next, tried the same but with some hashing code to de-dupe and not calculate some possibilities unnecessarily and reworked the solution to DFS instead of BFS, bringing down the mem usage to max about half a gig (for memo-ization), managed to calculate part 1 in a few hours.
+
+Not sure why it took so long to calculate based on production steps rather than minutes which is similar to the approach taken in day 16. This cut the time taken for part 1 to almost instant and part 2 to a couple of minutes. There are further optimisations to consider here but I'm fine with what I have...
