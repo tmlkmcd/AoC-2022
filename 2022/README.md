@@ -129,3 +129,9 @@ Most of this time spent waiting for a solution to run. Initially calculated abso
 Next, tried the same but with some hashing code to de-dupe and not calculate some possibilities unnecessarily and reworked the solution to DFS instead of BFS, bringing down the mem usage to max about half a gig (for memo-ization), managed to calculate part 1 in a few hours.
 
 Not sure why it took so long to calculate based on production steps rather than minutes which is similar to the approach taken in day 16. This cut the time taken for part 1 to almost instant and part 2 to a couple of minutes. There are further optimisations to consider here but I'm fine with what I have...
+
+## Day 20
+
+- Estimated completion time: 20 minutes
+
+First easy one for a while. Spent some time trying to figure out a strategy before deciding that I could use complex numbers to track the original position of the number in the list as it keeps moving (works over multiple 'mix' cycles too). Deque usage was down to remembering how the [marble game](https://adventofcode.com/2018/day/9) worked in an earlier year.
