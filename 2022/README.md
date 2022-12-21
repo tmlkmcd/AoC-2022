@@ -135,3 +135,9 @@ Not sure why it took so long to calculate based on production steps rather than 
 - Estimated completion time: 20 minutes
 
 First easy one for a while. Spent some time trying to figure out a strategy before deciding that I could use complex numbers to track the original position of the number in the list as it keeps moving (works over multiple 'mix' cycles too). Deque usage was down to remembering how the [marble game](https://adventofcode.com/2018/day/9) worked in an earlier year.
+
+## Day 21
+
+- Estimated completion time: 45 minutes
+
+The comments in the code tell the story here. Part 1 easy-peasy. Part 2 tried brute-forcing, it got to about 30000 before I decided there was probably a slicker approach (actual answer was about 8 orders of magnitude higher). I'm sure there's a programmatic way to calculate the needed value for 'humn' here but I figured it was probably faster to simply manually calculate it.  
