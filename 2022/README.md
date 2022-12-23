@@ -140,4 +140,11 @@ First easy one for a while. Spent some time trying to figure out a strategy befo
 
 - Estimated completion time: 45 minutes
 
-The comments in the code tell the story here. Part 1 easy-peasy. Part 2 tried brute-forcing, it got to about 30000 before I decided there was probably a slicker approach (actual answer was about 8 orders of magnitude higher). I'm sure there's a programmatic way to calculate the needed value for 'humn' here but I figured it was probably faster to simply manually calculate it.  
+The comments in the code tell the story here. Part 1 easy-peasy. Part 2 tried brute-forcing, it got to about 30000 before I decided there was probably a slicker approach (actual answer was about 8 orders of magnitude higher). I'm sure there's a programmatic way to calculate the needed value for 'humn' here but I figured it was probably faster to simply manually calculate it.
+
+## Day 22
+
+- Estimated completion time: ~4 hours
+
+Part 1 was fun - not much to say here. Part 2 I had a heck of a time making a miniature cube just to help me visualise which face connected to which face and was painstakingly going through my hard-coding, checking all of the connections with test inputs, until realising that I was getting the wrong answer because I wasn't resetting the navigator's direction if they encountered a wall as soon as they had changed face on the cube. Then submitted the wrong answer because I ran the correct program against a testing input... 🤦
+
