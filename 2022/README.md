@@ -148,3 +148,10 @@ The comments in the code tell the story here. Part 1 easy-peasy. Part 2 tried br
 
 Part 1 was fun - not much to say here. Part 2 I had a heck of a time making a miniature cube just to help me visualise which face connected to which face and was painstakingly going through my hard-coding, checking all of the connections with test inputs, until realising that I was getting the wrong answer because I wasn't resetting the navigator's direction if they encountered a wall as soon as they had changed face on the cube. Then submitted the wrong answer because I ran the correct program against a testing input... 🤦
 
+## Day 23
+
+- Estimated completion time: ~2 hours
+
+Enjoyed this one but it took a long time. Got snagged on simulating each 'round' correctly, mostly because I missed certain parts of the description and the code I'd written was not so easily adapted.
+
+Part 2 took a long time to simulate (estimated about 2 rounds a second; given that the answer was just under 1000 that's a little under 10 minutes to simulate) - I had already implemented every optimisation I could think of when writing part 1, further optimisations included not checking elves that had not moved for a long time (but other elves might then get near them much later) or elves in areas that had been dormant for a while...but figured it was just easier to let the simulation run since I had an idea of how far through it was. Turned out to be fine... 
