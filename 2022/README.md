@@ -158,6 +158,6 @@ Part 2 took a long time to simulate (estimated about 2 rounds a second; given th
 
 ## Day 24
 
-- Estimated completino time: ~1.5 hours
+- Estimated completion time: ~1.5 hours
 
 Enjoyed this one too, was pretty proud of the way I chose to model the blizzards. Couldn't figure out why it seemed to be running forever until, when running the program against a testing input, I figured that I wasn't memo-izing the previously seen outcomes properly. Program takes a long time to run (few minutes per step) but I'm fine with that since it got me the correct answer.
