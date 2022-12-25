@@ -161,3 +161,13 @@ Part 2 took a long time to simulate (estimated about 2 rounds a second; given th
 - Estimated completion time: ~1.5 hours
 
 Enjoyed this one too, was pretty proud of the way I chose to model the blizzards. Couldn't figure out why it seemed to be running forever until, when running the program against a testing input, I figured that I wasn't memo-izing the previously seen outcomes properly. Program takes a long time to run (few minutes per step) but I'm fine with that since it got me the correct answer.
+
+## 🎄
+
+- Estimated completion time: 1 hour
+
+Converting from 'snafu' is easy, converting from it took a long time to figure out a strategy. I ended up manually calculating the answer just to submit something quickly - it worked but was not elegant. The loop I have in place now was derived shortly after. 
+
+Merry Christmas!
+
+Conclusion: had heaps of fun this year in spite of the banging my head on a table trying to get day 19 to run. Will be much faster next year.
